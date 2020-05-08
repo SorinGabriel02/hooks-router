@@ -15,8 +15,11 @@ function App() {
         <Route exact path="/">
           <Landing />
         </Route>
-        <Route path="/users">
+        <Route exact path="/users">
           <Users />
+        </Route>
+        <Route path="/users/:userId/albums">
+          <Albums />
         </Route>
       </Switch>
 

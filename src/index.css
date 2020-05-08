@@ -93,7 +93,7 @@ main {
   list-style-type: none;
   border: 1px solid cornsilk;
   background-color: rgb(199, 155, 168);
-  box-shadow: 2px 2px 4px cornsilk;
+  box-shadow: 2px 2px 4px cornsilk, -2px -2px 4px cornsilk;
   margin: 2vmax;
   width: 20vmax;
   height: 20vmax;
