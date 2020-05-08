@@ -1,19 +1,28 @@
-import React, { useState } from "react";
-import ResourceList from "./ResourceList";
-import UserList from "./UserList";
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-const App = () => {
-  const [resource, setResource] = useState("posts");
+import Header from "./Header";
+import Footer from "./Footer";
+import Landing from "./Landing";
+import Users from "./Users";
+import Albums from "./Albums";
+
+function App() {
   return (
     <div>
-      <div>
-        <button onClick={() => setResource("posts")}>Posts</button>
-        <button onClick={() => setResource("todos")}>Todos</button>
-      </div>
-      <UserList />
-      <ResourceList resource={resource} />
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Landing />
+        </Route>
+        <Route path="/users">
+          <Users />
+        </Route>
+      </Switch>
+
+      <Footer />
     </div>
   );
-};
+}
 
 export default App;

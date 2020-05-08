@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: burlywood;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.landing {
+  font-size: 3rem;
+  color: blueviolet;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blanchedalmond;
+}
+
+.landing h1 {
+  text-shadow: 2px 2px 5px beige;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: coral;
+}
+
+header p {
+  margin: 1.5vmax;
+}
+
+header ul {
+  margin: 1.5vmax;
+}
+
+footer p {
+  padding: 1vmax;
+  background-color: coral;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 2vmax;
+  translate: all 0.2s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 2px crimson;
+}
+
+main {
+  min-height: 78vh;
+}
+
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vmax;
+  justify-content: center;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  list-style-type: none;
+  border: 1px solid cornsilk;
+  background-color: rgb(199, 155, 168);
+  box-shadow: 2px 2px 4px cornsilk;
+  margin: 2vmax;
+  width: 20vmax;
+  height: 20vmax;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.users:hover {
+  transform: scale(1);
+}
+
+.users img {
+  display: block;
+  width: 10vmax;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
