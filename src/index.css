@@ -96,9 +96,10 @@ main {
   box-shadow: 2px 2px 4px cornsilk, -2px -2px 4px cornsilk;
   margin: 2vmax;
   width: 20vmax;
-  height: 20vmax;
+  height: auto;
   transform: scale(0.95);
   transition: all 0.5s ease;
+  border-radius: "3px";
 }
 
 .users:hover {
