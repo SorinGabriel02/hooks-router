@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Landing from "./Landing";
 import Users from "./Users";
 import Albums from "./Albums";
+import AlbumPhotos from "./AlbumPhotos";
 
 function App() {
   return (
@@ -18,11 +19,13 @@ function App() {
         <Route exact path="/users">
           <Users />
         </Route>
-        <Route path="/users/:userId/albums">
+        <Route exact path="/users/:userId/albums">
           <Albums />
         </Route>
+        <Route path="/users/:userId/albums/:albumId/photos">
+          <AlbumPhotos />
+        </Route>
       </Switch>
-
       <Footer />
     </div>
   );

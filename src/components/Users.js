@@ -35,7 +35,12 @@ function Users() {
               color: "brown",
               textAlign: "center",
             }}
-            to={`/users/${id}/albums`}
+            to={{
+              pathname: `/users/${id}/albums`,
+              state: {
+                authorName: name,
+              },
+            }}
           >
             <img src={image} alt="avatar" />
             {name}
